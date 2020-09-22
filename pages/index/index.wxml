@@ -1,0 +1,61 @@
+<!--index.wxml-->
+<!--轮播图-->
+<view class="autoimageBox"
+style="width:100%">
+<swiper class="autoimage" autoplay="ture"
+circular="true"
+bindchange="indicator_fn">
+<swiper-item wx:for="{{image}}" wx:key="*this">
+<image class="All_w_image"
+ mode="widthFix" src="{{item}}"></image>
+</swiper-item>
+</swiper>
+<view class="indicatorBox">
+   <!--指标点-->
+<view class="indicator-dots {{autoImageIndex==index?'active':''}}" wx:for="{{image}}"></view>
+</view>
+<image class="All_w_image"  mode="widthFix" src="../../image/autoimage/arc.png"></image>
+</view>
+<!--滑动图-->
+<scroll-view id= "scroll1" bindscroll="scroll_fn" 
+scroll-x="true" style="width:100%"
+class="scrollBox">
+<!--扩展-->
+<view id="scroll2" class="scrollBox2">
+<!--第一个盒子-->
+<view wx:for="{{scroll}}"
+ wx:key="*this" wx:for-item="i">
+ <!--生成的盒子*2-->
+<view wx:for="{{i}}" wx:key="*this" 
+wx:for-item="j">
+<image mode="widthFix"
+class="All_w_image" src="{{j.src}}"></image>
+<view>{{j.text}} </view>
+</view>
+</view>
+</view>
+</scroll-view>
+<view class="scroll_s">
+<view class="scroll" 
+style="left:{{scrollLeft}}"></view>
+</view>
+<!--滑动图 end-->
+<view class="recommendBox">
+<view class="recommed" wx:for="{{recommed}}" wx:for-item="j">
+<!--标题区域-->
+<block wx:if="{{j.isImage}}">
+<image class="All_w_image" mode="widthFix" src="{{j.imagesrc}}"></image>
+</block>
+<block wx:if="{{!j.isImager}}">
+<view class="title">{{j.title}}</view>
+<view class="title">{{j.title2}}</view>
+</block>
+<!--标题区域end-->  
+<view class="samll">
+<view class="samll_box" wx:for="{{j.arr}}" wx:for-item="i">
+<view>{{i.title}}</view>
+<image class="All_w_image" mode="widthFix" src="{{i.src}}"></image>
+ </view>
+ </view> 
+</view>
+</view>

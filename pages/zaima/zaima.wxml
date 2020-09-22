@@ -1,0 +1,27 @@
+<!--top-->
+<view  class="top">
+<view  class="frist">
+<text>购物车({{2}})</text>
+</view>
+<view class="two"><text>共{{2}}件宝贝</text><text>管理</text></view>
+<scroll-view  scroll-y="true">
+<!-- 用于循环的模板-->
+<view>
+<!-- 点-->
+<view  class="dit"></view>
+<view  class="shop">
+<view>
+<image></image>
+<view>
+文字</view>
+
+</view>
+<view>
+<view>
+</view>价格</view>
+<view> <button>-</button> <text> {{1}}</text>  <button>+</button>  </view>
+
+</view>
+</view>
+</scroll-view>
+</view>

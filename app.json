@@ -1,0 +1,27 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/zaima/zaima"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "13"
+    },{
+      "pagePath": "pages/zaima/zaima",
+      "text": "14"
+  
+    }
+  ]
+},
+
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

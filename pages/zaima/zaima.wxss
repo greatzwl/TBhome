@@ -1,0 +1,26 @@
+/* pages/zaima/zaima.wxss */
+.All_w_image{
+  display: block;
+  width: 100%;
+}
+/*top */
+.top{
+  height: 396rpx;
+  padding:30rpx  20rpx;
+  background-color: rgb(255,83,0);
+  color: white;
+}
+.top .frist{
+  padding:20rpx  0;
+
+}
+.top .frist text:nth-child(1){
+  font-size: 40rpx;
+  font-weight: 800;
+}
+.top .two{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 40rpx;
+}
